@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Fei Luo - News">
+    <meta name="keywords" content="Fei Luo">
+    <title>News - Fei Luo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#191970',
+                        secondary: '#2a4365',
+                        accent: '#4a5568',
+                        light: '#f7fafc',
+                        dark: '#1a202c',
+                        href: '#191970',
+                    },
+                    fontFamily: {
+                        serif: ['Cardo', '"EB Garamond"', 'Palatino', '"Crimson Pro"', '"Crimson Text"', 'Times', 'Georgia', '"Libre Baskerville"', 'serif'],
+                        sans: ['Lato', 'Calibri', 'Open Sans', 'Verdana', 'Geneva', 'Tahoma', 'Arial', 'Inter', 'sans-serif', 'sans-serif']
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-balance {
+                text-wrap: balance;
+            }
+            .sidebar-shadow {
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            }
+            .section-title {
+                font-size: 1.4rem;
+                font-weight: 700;
+                color: text-gray-900;
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-serif text-dark">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <main class="flex flex-col lg:flex-row gap-6">
+            <div class="lg:w-4/4 space-y-8">
+
+                <section id="news">
+                    <h2 class="section-title">News</h2>
+
+                    <div class="flex">
+                        <ul class="list-disc space-y-1 ml-5 text-gray-900 text-sm" style="font-size: 12pt;">
+                            <li>
+                                <b>May 2026:</b> We released our latest research about internal reasoning manifold of LLM in <a href="https://arxiv.org/abs/2605.08142">arXiv</a>.
+                            </li>
+                            <li>
+                                <b>Apr. 2026:</b> One paper was accepted by <a href="https://ieeexplore.ieee.org/document/11498286">IEEE Access</a>.
+                            </li>
+                            <li>
+                                <b>Jan. 2026:</b> One paper was accepted by <a href="https://iclr.cc/">ICLR 2026</a>.
+                            </li>
+                        </ul>
+                    </div>
+
+                </section>
+
+            </div>
+        </main>
+
+        <br><br>
+    </div>
+</body>
+</html>
